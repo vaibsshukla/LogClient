@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" packages="org.vaibsshukla.LogClient.log4j2" strict="true">
+    <Appenders>
+        <CustomAppender name="CustomWebSocketAppender" >
+       		<PatternLayout pattern=" Date: %d | level:%level | class name:%logger | method name:%M() | line number:%L | Location: %l | message:%m%n" />
+        </CustomAppender>
+    </Appenders>
+    
+       <Loggers>
+              <Root level="DEBUG" additivity="false">
+                     <AppenderRef ref="CustomWebSocketAppender" />
+              </Root>
+       </Loggers>
+</Configuration>
